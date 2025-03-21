@@ -65,7 +65,7 @@ header p {
 
 /* Rodapé */
 footer {
-    background: linear-gradient(90deg, #6C757D 0%, #BD5D38 100%);
+    background: linear-gradient(90deg, white 0%, #BD5D38 100%);
     color: white;
     padding: 30px 0;
     text-align: center;
@@ -94,7 +94,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background: linear-gradient(90deg, #6C757D 0%, #BD5D38 100%);
+    background: linear-gradient(90deg, white 0%, #BD5D38 100%);
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -149,7 +149,7 @@ header p {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #6C757D; /* Tom suave e neutro */
+    color: white; /* Tom suave e neutro */
 }
 
 /* Estilo para as barras de progresso */
@@ -180,7 +180,7 @@ header p {
 
 /* Cor do título dentro de cada habilidade */
 #skills h4 {
-    color: #6C757D; /* Cor suave para os títulos das habilidades */
+    color: #EDEBE0; /* Cor suave para os títulos das habilidades */
     font-size: 1.25em;
     margin-bottom: 10px;
 }
@@ -188,7 +188,7 @@ header p {
 
 /* Seção Projetos - Fundo com gradiente */
 #projects {
-    background: linear-gradient(135deg, #6C757D, #BD5D38);
+    background: linear-gradient(135deg, #EDEBE0, #BD5D38);
     color: var(--white-color);
 }
 
