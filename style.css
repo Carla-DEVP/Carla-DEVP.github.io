@@ -219,8 +219,8 @@ header p {
 
 /* Seção de Contato */
 #contact {
-    background-color: #BD5D38;
-    color: white;
+    background: linear-gradient(135deg, 8F5923, C59A63);
+    color: var(--white-color);
     padding: 60px 0;
 }
 
