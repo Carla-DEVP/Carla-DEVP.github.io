@@ -1,98 +1,35 @@
-/* Cores Personalizadas */
+/* ====================== */
+/* Cores Personalizadas + Reset + Estilo Geral */
+/* ====================== */
 :root {
     --primary-color: #6C757D;
     --accent-color: #BD5D38;
     --white-color: #ffffff;
+    --bg-light: #f4f4f4;
+    --text-muted: #6c757d;
+    --bg-section: #fff;
+    --bg-alt-section: #f9f9f9;
+    --bg-card: #f8f9fa;
 }
 
-/* Geral */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-}
-
-/* Cabeçalho */
-header {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    padding: 60px 0;
-}
-
-header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-/* Seção Sobre */
-#about img {
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Progress Bar */
-.progress-bar {
-    border-radius: 5px;
-}
-
-/* Cartões de Projetos */
-.card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1rem;
-    color: #6c757d;
-}
-
-/* Contato */
-#contact i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-}
-
-/* Rodapé */
-footer {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    padding: 30px 0;
-}
-
-footer p {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-/* Resetando alguns estilos padrões */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: var(--bg-light);
     color: #333;
 }
 
+/* ====================== */
 /* Cabeçalho */
+/* ====================== */
 header {
-    background: linear-gradient(90deg, #6C757D 0%, #BD5D38 100%);
-    color: white;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--white-color);
     padding: 60px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -109,10 +46,13 @@ header p {
     font-weight: 300;
 }
 
+/* ====================== */
 /* Seção Sobre */
+/* ====================== */
 #about {
     padding: 60px 0;
-    background-color: #fff;
+    background-color: var(--bg-section);
+    text-align: center;
 }
 
 #about img {
@@ -125,6 +65,7 @@ header p {
 
 #about h2 {
     font-size: 2em;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -132,19 +73,23 @@ header p {
     font-size: 1.1em;
     line-height: 1.6;
     color: #555;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Habilidades */
+/* ====================== */
+/* Seção Habilidades */
+/* ====================== */
 #skills {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: var(--bg-alt-section);
+    text-align: center;
 }
 
 #skills h2 {
-    text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #6C757D;
+    color: var(--primary-color);
 }
 
 #skills .progress {
@@ -170,22 +115,25 @@ header p {
     background-color: #17a2b8;
 }
 
-/* Seção de Projetos */
+/* ====================== */
+/* Seção Projetos */
+/* ====================== */
 #projects {
     padding: 60px 0;
-    background-color: #fff;
+    background-color: var(--bg-section);
+    text-align: center;
 }
 
 #projects h2 {
-    text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #6C757D;
+    color: var(--primary-color);
 }
 
 #projects .card {
     margin-bottom: 30px;
     border: none;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -198,49 +146,48 @@ header p {
     height: 200px;
     object-fit: cover;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 #projects .card-body {
     padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    background-color: var(--bg-card);
+    border-radius: 0 0 8px 8px;
 }
 
 #projects .card-title {
     font-size: 1.5em;
-    color: #333;
     font-weight: bold;
+    color: #333;
 }
 
 #projects .card-text {
     font-size: 1em;
-    color: #6C757D;
+    color: var(--text-muted);
 }
 
-/* Seção de Contato */
+/* ====================== */
+/* Seção Contato */
+/* ====================== */
 #contact {
-    background-color: #BD5D38;
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--white-color);
     padding: 60px 0;
+    text-align: center;
 }
 
 #contact h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: white;
 }
 
-#contact .row {
-    text-align: center;
-}
-
-#contact .col-md-4 {
-    margin-bottom: 30px;
+#contact i {
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 #contact a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -250,12 +197,9 @@ header p {
     color: #f0f0f0;
 }
 
+/* ====================== */
 /* Rodapé */
-:root {
-    --primary-color: #6C757D;
-    --accent-color: #BD5D38;
-    --white-color: #ffffff;
-}
+/* ====================== */
 footer {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -268,7 +212,9 @@ footer p {
     font-weight: 300;
 }
 
-/* Media Queries */
+/* ====================== */
+/* Responsividade */
+/* ====================== */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
@@ -290,3 +236,4 @@ footer p {
         height: 150px;
     }
 }
+
