@@ -251,6 +251,11 @@ header p {
 }
 
 /* Rodapé */
+:root {
+    --primary-color: #6C757D;
+    --accent-color: #BD5D38;
+    --white-color: #ffffff;
+}
 footer {
     background-color: var(--primary-color);
     color: var(--white-color);
