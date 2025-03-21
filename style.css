@@ -218,35 +218,25 @@ header p {
 }
 
 /* Seção de Contato */
-#bg-primary text-white py-5 {
-    background: linear-gradient(135deg, 8F5923, C59A63);
-    color: var(--white-color);
+#contact {
+    background: linear-gradient(135deg, #8F5923, #C59A63);
+    color: white;
     padding: 60px 0;
 }
 
-#contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: white;
-}
-
-#contact .row {
-    text-align: center;
-}
-
-#contact .col-md-4 {
-    margin-bottom: 30px;
-}
-
+/* Estilo para links */
 #contact a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #f0f0f0;
+    text-decoration: underline;
+}
+
+/* Tamanho do ícone */
+#contact i {
+    margin-right: 10px;
 }
 
 /* Rodapé */
