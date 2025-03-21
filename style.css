@@ -137,24 +137,27 @@ header p {
     color: #555;
 }
 
-/* Habilidades */
-#col-md-4 {
-    background-color: linear-gradient(135deg, #6F4F37, #D8B39E);
+/* Seção de Habilidades */
+#skills {
+    background: linear-gradient(135deg, #6F4F37, #D8B39E); /* Gradiente Mocha Mousse */
     color: white;
     padding: 60px 0;
 }
 
+/* Estilo do título */
 #skills h2 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #6C757D;
+    color: #6C757D; /* Tom suave e neutro */
 }
 
+/* Estilo para as barras de progresso */
 #skills .progress {
     height: 30px;
     margin-bottom: 20px;
     border-radius: 25px;
+    background-color: #F2F2F2; /* Fundo suave para as barras */
 }
 
 #skills .progress-bar {
@@ -162,17 +165,26 @@ header p {
     font-weight: bold;
 }
 
+/* Cores das barras de progresso */
 #skills .progress-bar.bg-success {
-    background-color: #28a745;
+    background-color: #28a745; /* Verde */
 }
 
 #skills .progress-bar.bg-warning {
-    background-color: #ffc107;
+    background-color: #ffc107; /* Amarelo */
 }
 
 #skills .progress-bar.bg-info {
-    background-color: #17a2b8;
+    background-color: #17a2b8; /* Azul suave */
 }
+
+/* Cor do título dentro de cada habilidade */
+#skills h4 {
+    color: #6C757D; /* Cor suave para os títulos das habilidades */
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
 
 /* Seção Projetos - Fundo com gradiente */
 #projects {
