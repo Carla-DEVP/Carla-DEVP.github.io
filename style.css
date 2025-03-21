@@ -173,53 +173,55 @@ header p {
     background-color: #17a2b8;
 }
 
-/* Seção de Projetos */
+/* Seção Projetos - Fundo com gradiente */
 #projects {
-    padding: 60px 0;
-    background-color: #fff;
+    background: linear-gradient(135deg, #6C757D, #BD5D38);
+    color: var(--white-color);
 }
 
+/* Título da seção Projetos centralizado e destacado */
 #projects h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #6C757D;
-}
-
-#projects .card {
-    margin-bottom: 30px;
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-#projects .card:hover {
-    transform: translateY(-10px);
-}
-
-#projects .card img {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 8px;
-}
-
-#projects .card-body {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-}
-
-#projects .card-title {
-    font-size: 1.5em;
-    color: #333;
+    color: var(--white-color);
     font-weight: bold;
 }
 
-#projects .card-text {
-    font-size: 1em;
-    color: #6C757D;
+/* Cartões de Projetos com borda clara e leve transparência */
+#projects .card {
+    background-color: rgba(255, 255, 255, 0.1); /* fundo semi-transparente */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#projects .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos e textos dentro dos cards com cores claras */
+#projects .card-title {
+    color: var(--white-color);
+}
+
+#projects .card-text {
+    color: #f0f0f0;
+}
+
+/* Botão personalizado com borda clara e hover com fundo branco + texto escuro */
+#projects .btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#projects .btn-project:hover {
+    background-color: var(--white-color);
+    color: #BD5D38;
+}
+
 
 /* Seção de Contato */
 #contact {
