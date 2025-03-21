@@ -140,7 +140,7 @@ header p {
 /* Habilidades */
 #skills {
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: #6C757D;
 }
 
 #skills h2 {
@@ -218,8 +218,13 @@ header p {
 }
 
 #projects .btn-project:hover {
-    background-color: var(--white-color);
-    color: #BD5D38;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 
