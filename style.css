@@ -218,7 +218,7 @@ header p {
 }
 
 /* Seção de Contato */
-#contact {
+#bg-primary text-white py-5 {
     background: linear-gradient(135deg, 8F5923, C59A63);
     color: var(--white-color);
     padding: 60px 0;
