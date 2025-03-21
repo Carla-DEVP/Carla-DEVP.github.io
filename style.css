@@ -138,7 +138,7 @@ header p {
 }
 
 /* Habilidades */
-#skills {
+#col-md-4 {
     background-color: linear-gradient(135deg, #6F4F37, #D8B39E);
     color: white;
     padding: 60px 0;
