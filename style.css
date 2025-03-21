@@ -17,6 +17,7 @@ header {
     background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
     color: white;
     padding: 50px 0;
+    text-align: center;
 }
 
 header h1 {
@@ -36,6 +37,7 @@ header p {
     border-radius: 50%;
     width: 100%;
     max-width: 250px;
+    height: auto;
 }
 
 /* Habilidades */
@@ -47,11 +49,33 @@ header p {
 /* Seção de Projetos */
 #projects .card {
     margin-bottom: 20px;
+    border: none;
 }
 
 #projects .card img {
     height: 200px;
     object-fit: cover;
+    width: 100%;
+}
+
+#projects .card-body {
+    padding: 15px;
+}
+
+/* Seção de Contato */
+#contact {
+    background-color: #2575fc;
+    color: white;
+    padding: 50px 0;
+}
+
+#contact .col-md-4 {
+    text-align: center;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Rodapé */
@@ -59,8 +83,32 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
 footer p {
     font-size: 1em;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #about img {
+        max-width: 200px;
+    }
+    
+    #skills .progress {
+        height: 20px;
+    }
+
+    #projects .card img {
+        height: 150px;
+    }
 }
