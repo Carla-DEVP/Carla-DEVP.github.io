@@ -1,135 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carla Guimarães | Desenvolvedora</title>
-    <!-- Incluindo o CSS do Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Atualização do Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"> <!-- Atualização do Animate.css -->
-    <link rel="stylesheet" href="style.css"> <!-- Seu CSS personalizado -->
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Bootstrap (opcional) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Seção de Cabeçalho -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Carla Guimarães de Medeiros</h1>
-            <p class="lead">Systems Developer | Commercial Management | Supply Chain | Project Management | Agile Master | SFPC™</p>
-        </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Carla Guimarâes de Medeiros</h1>
+        <p>Systems Developer | Commercial Management | Supply Chain | Project Management | Agile Master | SFPC™</p>
     </header>
 
-    <!-- Seção de Sobre -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="https://github.com/Carla-DEVP/carla-devp.github.io/raw/main/carla.jpg" alt="Carla Guimarães" class="img-fluid rounded-circle mb-4 shadow-lg">
-                </div>
-                <div class="col-lg-8">
-                    <h2 class="mb-4">Sobre Mim</h2>
-                    <p>Olá! Sou Carla Guimarães de Medeiros, gaúcha, morando em João Pessoa/PB. Com formação em Gestão Comercial e atualmente cursando o 3º semestre de Análise e Desenvolvimento de Sistemas, trago mais de 20 anos de experiência em gestão, projetos e análise de dados, agora aplicados ao universo da tecnologia.</p>
+    <!-- Sobre Mim -->
+    <section id="about">
+        <img src="sua-foto.jpg" alt="Foto de Perfil">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Sou Carla Guimarães de Medeiros, gaúcha, morando em João Pessoa/PB. Com formação em Gestão Comercial e atualmente cursando o 3º semestre de Análise e Desenvolvimento de Sistemas, trago mais de 20 anos de experiência em gestão, projetos e análise de dados, agora aplicados ao universo da tecnologia.</p>
                     <p>Tenho conhecimentos em Java, JavaScript, Python, C, React, HTML, CSS, Git/GitHub e metodologias ágeis, além de vivência prática em iniciação científica (ENTEC), desenvolvendo soluções e resolvendo problemas reais. Sou movida por desafios, aprendizado contínuo e paixão por inovação. Acredito que unir visão estratégica e habilidades técnicas pode gerar impacto real – e é isso que buscamos entregar em cada projeto.</p>
                     <p>Seja bem-vindo(a) ao meu Git e fique à vontade para conhecer meus trabalhos!</p>
-                </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="container">
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width: 80%;">HTML - 80%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 70%;">CSS - 70%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width: 60%;">JavaScript - 60%</div>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Habilidades -->
-    <section id="skills" class="py-5">
+    <!-- Projetos -->
+    <section id="projects">
+        <h2>Projetos</h2>
         <div class="container">
-            <h2 class="text-center mb-5">Habilidades</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <h4>JavaScript</h4>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 90%" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h4>React</h4>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" style="width: 80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h4>Python</h4>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" style="width: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Projetos -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Projetos</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card shadow-lg">
-                        <img src="https://via.placeholder.com/500" class="card-img-top" alt="Projeto 1">
+                    <div class="card">
+                        <img src="projeto1.jpg" alt="Projeto 1">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 1</h5>
-                            <p class="card-text">Descrição do projeto, habilidades utilizadas e tecnologias aplicadas.</p>
-                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+                            <p class="card-text">Descrição breve do projeto...</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card shadow-lg">
-                        <img src="https://via.placeholder.com/500" class="card-img-top" alt="Projeto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 2</h5>
-                            <p class="card-text">Descrição do projeto, habilidades utilizadas e tecnologias aplicadas.</p>
-                            <a href="#" class="btn btn-primary">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-lg">
-                        <img src="https://via.placeholder.com/500" class="card-img-top" alt="Projeto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 3</h5>
-                            <p class="card-text">Descrição do projeto, habilidades utilizadas e tecnologias aplicadas.</p>
-                            <a href="#" class="btn btn-primary">Ver Projeto</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Repetir card para outros projetos -->
             </div>
         </div>
     </section>
 
-    <!-- Seção de Contato -->
-    <section id="contact" class="bg-primary text-white py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contato</h2>
-            <p class="text-center">Entre em contato comigo para conversar sobre projetos, oportunidades ou apenas para bater um papo! 😊</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:carlaguimaraesdemedeiros@gmail.com" class="text-white">carlaguimaraesdemedeiros@gmail.com</a></p>
-                </div>
-                <div class="col-md-4">
-                    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/carlaguimaraesdemedeiros" class="text-white">LinkedIn</a></p>
-                </div>
-                <div class="col-md-4">
-                    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Carla-DEVP" class="text-white">GitHub</a></p>
-                </div>
-            </div>
-        </div>
+    <!-- Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
     </section>
 
     <!-- Rodapé -->
-    <footer class="text-center py-4">
-        <p class="mb-0">"A qualidade da sua vida depende da qualidade dos seus pensamentos." — Marco Aurélio</p>
+    <footer>
+        <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome (para ícones) -->
+    <script src="https://kit.fontawesome.com/seu-codigo.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
