@@ -65,7 +65,7 @@ header p {
 
 /* Rodapé */
 footer {
-    background: linear-gradient(135deg, #ffffff 0%, #BD5D38 100%);
+    background: linear-gradient(135deg, #6C757D 0%, #BD5D38 100%);
     color: white;
     padding: 30px 0;
     text-align: center;
@@ -188,7 +188,7 @@ header p {
 
 /* Seção Projetos - Fundo com gradiente */
 #projects {
-    background: linear-gradient(135deg, #ffffff, #BD5D38);
+    background: linear-gradient(135deg, #6C757D, #BD5D38);
     color: var(--white-color);
 }
 
