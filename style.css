@@ -104,7 +104,7 @@ header p {
 }
 
 /* Contato */
-.text-brown {
+.text-brown * {
     color: #4d392d !important;
 }
 
