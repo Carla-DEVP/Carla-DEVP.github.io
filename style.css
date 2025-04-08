@@ -229,14 +229,14 @@ header p {
 
 /* Seção de Contato */
 #contact {
-    background: linear-gradient(135deg, #6F4F37, #D8B39E);
-    color: white;
+    background-color: #f5f0eb;
+    color: #4d392d;
     padding: 60px 0;
 }
 
 /* Estilo para links */
 #contact a {
-    color: white;
+    color: #4d392d;
     text-decoration: none;
 }
 
