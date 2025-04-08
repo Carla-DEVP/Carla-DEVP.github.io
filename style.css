@@ -34,45 +34,54 @@ header p {
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* Habilidades */
+
 .skill-card {
   background-color: #f5f0eb; /* tom claro da paleta Mocha Mousse */
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(90, 70, 50, 0.1);
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(90, 70, 50, 0.1);
   transition: transform 0.3s ease;
+  min-height: 100px;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 .skill-card h5 {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #4d392d; /* tom escuro mocha */
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .skill-card i {
-  margin-right: 8px;
   color: #a57c5b; /* tom médio mocha */
+  font-size: 1.1rem;
 }
 
 .skill-bar {
   background-color: #ddd1c4; /* fundo da barra */
-  height: 8px;
-  border-radius: 6px;
+  height: 6px;
+  border-radius: 5px;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .skill-bar .bar {
   height: 100%;
   background-color: #8b5e3c; /* cor da barra preenchida */
-  border-radius: 6px;
+  border-radius: 5px;
   transition: width 0.5s ease-in-out;
 }
 
+/* Espaçamento entre os cards (g-4 nem sempre funciona em todos os layouts) */
+#skills .row > div {
+  margin-bottom: 20px;
+}
 
 
 /* Cartões de Projetos */
