@@ -108,6 +108,17 @@ header p {
     font-size: 1.5rem;
     margin-right: 10px;
 }
+ #contact {
+  color: #4d392d;
+}
+
+#contact h2,
+#contact h3,
+#contact h4,
+#contact h5 {
+  color: #4d392d;
+  font-weight: 600;
+}
 
 /* Rodapé */
 footer {
