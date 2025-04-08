@@ -35,10 +35,45 @@ header p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Progress Bar */
-.progress-bar {
-    border-radius: 5px;
+.skill-card {
+  background-color: #f5f0eb; /* tom claro da paleta Mocha Mousse */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(90, 70, 50, 0.1);
+  transition: transform 0.3s ease;
 }
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h5 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #4d392d; /* tom escuro mocha */
+  margin-bottom: 10px;
+}
+
+.skill-card i {
+  margin-right: 8px;
+  color: #a57c5b; /* tom médio mocha */
+}
+
+.skill-bar {
+  background-color: #ddd1c4; /* fundo da barra */
+  height: 8px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.skill-bar .bar {
+  height: 100%;
+  background-color: #8b5e3c; /* cor da barra preenchida */
+  border-radius: 6px;
+  transition: width 0.5s ease-in-out;
+}
+
+
 
 /* Cartões de Projetos */
 .card {
