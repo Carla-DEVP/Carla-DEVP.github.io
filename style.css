@@ -104,6 +104,10 @@ header p {
 }
 
 /* Contato */
+.text-brown {
+    color: #4d392d !important;
+}
+
 #contact i {
     font-size: 1.5rem;
     margin-right: 10px;
