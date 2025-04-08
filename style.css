@@ -252,11 +252,13 @@ header p {
 }
 
 #contact a:hover {
+    color: #4d392d;
     text-decoration: underline;
 }
 
 /* Tamanho do ícone */
 #contact i {
+    color: #4d392d;
     margin-right: 10px;
 }
 
